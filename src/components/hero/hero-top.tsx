@@ -7,7 +7,9 @@ const HeroTop = () => {
   return (
     <div className="size-full flex items-center justify-between [background:radial-gradient(circle,rgba(247,189,255,1)3%,rgba(255,255,255,1)25%,rgba(255,255,255,1)100%)]">
       <div className="size-full flex items-center justify-center">
-        <RiNextjsFill className="-rotate-12 text-foreground" size={80} />
+        <div className="size-28">
+          <RiNextjsFill className="-rotate-12 size-full text-foreground" />
+        </div>
       </div>
       <div className="relative flex items-center justify-center ">
         <div className="absolute size-28 flex items-center justify-center rounded-full shadow-inner shadow-[rgba(99,76,195,0.4)] bg-white">
@@ -18,7 +20,9 @@ const HeroTop = () => {
         <GiPolarStar size={40} className="text-dark drop-shadow" />
       </div>
       <div className="size-full flex items-center justify-center">
-        <BiLogoTypescript className="rotate-12 text-foreground" size={80} />
+        <div className="size-28">
+          <BiLogoTypescript className="rotate-12 text-foreground size-full" />
+        </div>
       </div>
     </div>
   );
