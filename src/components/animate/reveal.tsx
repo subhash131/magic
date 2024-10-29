@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { cn } from "@/utils/cn";
 
 const Reveal = ({
   children,
@@ -20,7 +21,7 @@ const Reveal = ({
       initial={{ ...defaultInitial, ...initial }}
       animate={{ ...defaultAnimate, ...animate }}
       transition={{ ...defaultTransition, ...transition }}
-      className={`text-center flex items-center justify-center ${className}`}
+      className={cn("text-center flex items-center justify-center", className)}
     >
       {children}
     </motion.div>

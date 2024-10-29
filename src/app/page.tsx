@@ -1,14 +1,15 @@
-import AppIcon from "@/components/app-icon";
+import Features from "@/components/features";
 import Hero from "@/components/hero/";
+import HomeWrapper from "@/components/home-wrapper";
 import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen">
-      <AppIcon />
+    <HomeWrapper>
       <Navbar />
       <Hero />
-      <div className="w-full h-screen bg-red-50 sticky top-0"></div>
-    </div>
+      <Features />
+      <div className="w-full h-screen bg-green-50 sticky top-0"></div>
+    </HomeWrapper>
   );
 }
