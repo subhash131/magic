@@ -1,5 +1,7 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Button from "../link";
+import CustomLink from "../link";
 
 const HeroBottom = () => {
   return (
@@ -9,13 +11,14 @@ const HeroBottom = () => {
         <span className="text-foreground"> use case.</span>
       </h1>
       <div className="flex items-center justify-center gap-4">
-        <button className="px-4 py-2 rounded-md bg-foreground text-white font-semibold">
+        {/* <button className=" bg-foreground ">Get Started</button> */}
+        <CustomLink className="bg-foreground text-white" href="#">
           Get Started
-        </button>
-        <button className="px-4 py-2 rounded-md text-dark font-semibold flex items-center gap-2   ">
+        </CustomLink>
+        <CustomLink href="/">
           Templates
           <FaLongArrowAltRight />
-        </button>
+        </CustomLink>
       </div>
     </div>
   );
