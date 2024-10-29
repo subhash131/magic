@@ -1,42 +1,42 @@
 "use client";
 import React from "react";
-import {
-  motion,
-} from "framer-motion";
+import { motion } from "framer-motion";
 
-const SpinIcon = ({
+const Reveal = ({
   children,
+  className,
   animate,
   initial,
   transition,
 }: {
   children: React.ReactNode;
+  className?: string;
   initial?: any;
   animate?: any;
   transition?: any;
 }) => {
   return (
     <motion.div
-      className="size-28 flex items-center justify-center"
-      initial={{ ...defaultInit, ...initial }}
+      initial={{ ...defaultInitial, ...initial }}
       animate={{ ...defaultAnimate, ...animate }}
       transition={{ ...defaultTransition, ...transition }}
+      className={`text-center flex items-center justify-center ${className}`}
     >
       {children}
     </motion.div>
   );
 };
 
-export default SpinIcon;
+export default Reveal;
 
-const defaultInit = {
-  scale: 0,
-  rotate: 0,
+const defaultInitial = {
+  y: 100,
+  opacity: 0,
 };
 const defaultAnimate = {
-  scale: 1,
-  rotate: 360,
+  y: 0,
+  opacity: 1,
 };
 const defaultTransition = {
-  duration: 0.4,
+  delay: 0,
 };

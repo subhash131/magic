@@ -4,7 +4,7 @@ import HeroBottom from "./hero-bottom";
 
 const Hero = () => {
   return (
-    <div className="w-screen h-screen flex flex-col">
+    <div className="w-full h-screen overflow-x-hidden flex flex-col sticky top-0 z-0">
       <HeroTop />
       <HeroBottom />
     </div>
